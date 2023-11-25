@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script >
+        function startGame(boardSize) {
+    window.location.href = `2048.html?size=${boardSize}`;
+}
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to 2048 Game</h1>
+        <div class="board-types">
+            <button id="b4x4" onclick="startGame(4)">4x4</button>
+            <button id="b5x5" onclick="startGame(5)">5x5</button>
+            <button id="b6x6" onclick="startGame(6)">6x6</button>
+        </div>
+    </div>
+   
+    <style>
+        .board-types {
+            top: 50%;
+            left: 50%;
+        }
+
+        #b4x4,
+        #b5x5,
+        #b6x6 {
+            top: 100%;
+            left: 50%;
+            display: flex;
+            background-color: #8f7a66;
+            color: #f9f6f3;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+
+</html>

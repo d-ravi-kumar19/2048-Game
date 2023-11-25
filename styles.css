@@ -1,0 +1,173 @@
+body {
+  background-color: #e6e1c9;
+  transform-origin: top;
+  transform: scale(0.80);
+  height: 80vh;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.container {
+  text-align: center;
+  margin-top: auto;
+}
+
+.board-types {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+}
+
+hr {
+  width: 400px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 75px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(180, 147, 79);
+  color: rgb(10, 10, 10);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  opacity: 90%;
+}
+
+/* .message {
+  display: flex;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(183, 145, 70);
+  color: rgb(10, 10, 10);
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 90%;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .message p {
+  margin-top: 3vh;
+} */
+
+.hidden {
+  display: none;
+}
+
+#new-game,
+#undo {
+  background-color: #8f7a66;
+  color: #f9f6f3;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#board {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(144, 140, 136);
+  border: 3px solid rgb(144, 140, 136);
+  border-radius: 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), 1fr);
+  gap: 5px;
+}
+
+.tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border: 3px solid rgb(110, 106, 103);
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x2 {
+  background-color: #eee4da;
+  /* Light beige */
+}
+
+.x4 {
+  background-color: #efe6c2;
+  /* Light grayish tan */
+}
+
+.x8 {
+  background-color: #f2b179;
+  /* Light orange */
+}
+
+.x16 {
+  background-color: #f59563;
+  /* Light red-orange */
+}
+
+.x32 {
+  background-color: #f67c5f;
+  /* Light salmon */
+}
+
+.x64 {
+  background-color: #f65e3b;
+  /* Light red */
+}
+
+.x128 {
+  background-color: #edcf72;
+  /* Light yellow */
+}
+
+.x256 {
+  background-color: #edcc61;
+  /* Light goldenrod */
+}
+
+.x512 {
+  background-color: #edc850;
+  /* Light gold */
+}
+
+.x1024 {
+  background-color: #edc53f;
+  /* Light yellow-gold */
+}
+
+.x2048 {
+  background-color: #edc22e;
+  /* Light yellow-orange */
+}
